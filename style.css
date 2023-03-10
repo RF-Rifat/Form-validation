@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css?family=Abel|Abril+Fatface|Alegreya|Arima+Madurai|Dancing+Script|Dosis|Merriweather|Oleo+Script|Overlock|PT+Serif|Pacifico|Playball|Playfair+Display|Share|Unica+One|Vibur');
+
+:root{
+    --success-clr: #22b522;
+    --error-clr: #e73131;
+}
+
+body {
+    background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
+background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+background-attachment: fixed;
+  background-repeat: no-repeat;
+
+    font-family: 'Vibur', cursive;
+/*   the main font */
+    font-family: 'Abel', sans-serif;
+opacity: .95;
+background-image: linear-gradient(to top, #b0d9af 0%, #97d9e1 100%);
+}
+
+.main{
+    padding: 20px;
+}
+
+form {
+    width: 450px;
+    min-height: 50svh;
+    height: auto;
+    border-radius: 5px;
+    margin: 2% auto;
+    box-shadow: 0 9px 50px hsla(20, 67%, 75%, 0.31);
+    background-image: linear-gradient(-225deg, #E3FDF5 50%, #9fe1fd 50%);
+    text-align: center;
+}
+.form{
+    text-align: justify;
+}
+form label{
+    display: block;
+    margin-bottom: 5px;
+}
+/* inputs form  */
+input[type="text"]{
+    font-size: 16px;
+    font-family: 'Abel', sans-serif;
+    color: #5E6472;
+  
+    outline: none;
+    border: none;
+  
+    border-radius: 0px 5px 5px 0px;
+    transition: 0.2s linear;
+    
+}
+input[type="text"] {
+    width: 360px;
+    height: 5svh;
+}
+/* focus  */
+input:focus {
+    transform: translateX(-2px);
+    border-radius: 5px;
+}
+
+span{
+    display: block;
+    font-size: smaller;
+    visibility: hidden;
+}
+
+button {
+    display: inline-block;
+    color: #252537;
+  
+    width: 180px;
+    height: 40px;
+  
+    background: #fff;
+    border-radius: 5px;
+    
+    outline: none;
+    border: none;
+  
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.2s linear;
+    
+    margin: 7% auto;
+    letter-spacing: 0.05em;
+    font-size: 1.5rem;
+}
+
+.form{
+    padding: 8px;
+    font-size: 1.2rem;
+}
+
+input[type="text"]{
+    font-size: 1rem;
+}
+
+
+/* buttons hover */
+button:hover {
+    transform: translatey(3px);
+    box-shadow: none;
+}
+
+/* buttons hover Animation */
+button:hover {
+    animation: ani9 0.4s ease-in-out infinite alternate;
+}
+@keyframes ani9 {
+    0% {
+        transform: translateY(3px);
+    }
+    100% {
+        transform: translateY(5px);
+    }
+}
+
+/* success error */
+
+.form span{
+    color: var(--success-clr);
+}
+.form span{
+    color: var(--error-clr);
+}
+
+.form.error span{
+    visibility: hidden;
+}
+.form.error span{
+    visibility: visible;
+}
